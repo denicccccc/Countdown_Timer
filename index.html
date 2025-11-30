@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Timer</title>
+
+    <!-- Підключення flatpickr -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+
+<body>
+    <div>
+        <input type="text" id="datetime-picker">
+        <button data-start disabled>Start</button>
+    </div>
+
+    <div class="timer">
+        <div class="field"><span class="value" data-days>00</span><span>Days</span></div>
+        <div class="field"><span class="value" data-hours>00</span><span>Hours</span></div>
+        <div class="field"><span class="value" data-minutes>00</span><span>Minutes</span></div>
+        <div class="field"><span class="value" data-seconds>00</span><span>Seconds</span></div>
+    </div>
+
+    <style>
+        body { text-align: center; }
+        .timer { display: flex; justify-content: center; gap: 10px; margin-top: 20px; }
+        .value { font-size: 32px; display: block; }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="./timer.js"></script>
+</body>
+</html>
