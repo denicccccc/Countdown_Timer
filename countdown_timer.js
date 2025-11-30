@@ -38,7 +38,7 @@ startBtn.addEventListener("click", () => {
   input.disabled = true;
 });
 
-// Функції
+
 function convertMs(ms) {
   const second = 1000;
   const minute = second * 60;
